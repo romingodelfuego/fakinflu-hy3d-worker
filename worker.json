@@ -1,0 +1,16 @@
+{
+  "name": "hy3d",
+  "repo": "romingodelfuego/fakinflu-hy3d-worker",
+  "visibility": "private",
+  "description": "fakinflu RunPod serverless worker: Hunyuan3D-2 texture (Paint v2-0-Turbo) + HD shape (DiT v2-0-Turbo)",
+  "endpoint": {
+    "name": "fakinflu-hy3d-worker",
+    "env_var": "RUNPOD_HY3D_ENDPOINT_ID",
+    "gpu_pools": ["AMPERE_24"],
+    "workers": {"min": 0, "max": 2, "idleTimeout": 5},
+    "timeout_ms": 600000,
+    "flashboot": "FLASHBOOT",
+    "disk_gb": 40,
+    "env": {}
+  }
+}
